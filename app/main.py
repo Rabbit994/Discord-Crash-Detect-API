@@ -1,7 +1,9 @@
-from fastapi import FastAPI, HTTPException
-from .routers import calc, greet, weather
+#Simple API to check for crashes
 import subprocess
 import hashlib
+import os
+
+from fastapi import FastAPI
 import requests
 
 
@@ -40,4 +42,5 @@ def checkfile(url:str):
     file = download_file(url)
     result = run_ffmpeg(file)
     check = check_output(result)
+    os.remove(file)
     return {"corrupted": check}

@@ -1,5 +1,8 @@
-FROM python:3.7
+FROM python:3.9
 
+#Install FFMPEG
+RUN apt update
+RUN apt install -y ffmpeg
 #Run PIP install
 COPY requirements.txt .
 RUN python3 -m pip install -r requirements.txt
