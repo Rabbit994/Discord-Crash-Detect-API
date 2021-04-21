@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Ignore mp4/gif test files
+*.mp4
+*.gif
