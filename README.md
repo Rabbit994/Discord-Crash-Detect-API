@@ -1,3 +1,6 @@
+# ARCHIVED
+This repo has been ARCHIVED due to Discord has fixed this in electron and this is no longer required.
+
 # Discord-Crash-Detect-API
 Detects Discord Video Crasher MP4 and GIFs
 
